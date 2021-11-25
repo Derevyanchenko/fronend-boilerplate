@@ -1,0 +1,157 @@
+.services {
+    margin-top: 116px;
+}
+
+.services__item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 33px 16px 30px 16px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(1, 46, 103, 0.3);
+    border-radius: 5px;
+    height: 100%;
+    position: relative;
+    // cursor: pointer;
+    &-img {
+        text-align: center;
+        margin-bottom: 10px;
+        img {
+            margin: auto;
+        }
+    }
+
+    &-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        
+        color: #121215;
+    }
+
+    &:hover {
+        .services__more {
+            opacity: 1;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.services__slider {
+    padding-top: 36px;
+    padding-bottom: 12px;
+}
+
+.services__more {
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #454545;
+    border-radius: 5px;
+    padding: 0 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .services__more p {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .services__wrapper {
+        max-width: 890px;
+        position: relative;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .services {
+        margin-top: 95px;
+        .slider__dots-wrapper,
+        .slider__arrows {
+            display: none;
+        }
+
+        .col-lg-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
+        
+    }
+
+    .services__item {
+        margin: 0;
+    }
+
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .services {
+        margin-top: 80px;
+
+        .col-lg-3 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 26px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .services__item {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 320px;
+    }
+
+    .services__slider {
+        padding-top: 31px;
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 340px) {
+
+
+}

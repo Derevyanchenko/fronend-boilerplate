@@ -1,0 +1,168 @@
+// contacts
+
+.map {
+    margin-top: 130px;
+    .container {
+        position: relative;
+    }
+}
+
+.contacts {
+    max-width: 625px;
+    width: 100%;
+    top: 89px;
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 63px 53px 40px 77px;
+
+    .section__title {
+
+    }
+   
+}
+
+.contacts__top {
+    margin-top: 37px;
+    display: flex;
+    // justify-content: space-between;
+}
+
+.contacts__item {
+    margin-bottom: 19px;
+    &:nth-child(2) {
+        margin-left: 132px;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 18px;
+    }
+
+    &-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.contacts__btn {
+    margin-top: 37px;
+    position: relative;
+    z-index: 1;
+    padding: 17px 51px;
+}
+
+.contacts__logo {
+    margin-top: -54px;
+    text-align: right;
+    position: relative;
+    z-index: 0;
+}
+
+a.contacts__item-text {
+    transition: all 0.3s;
+}
+
+a.contacts__item-text:hover {
+    color: #012E67;
+}
+
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+    
+}
+
+
+@media (max-width: 991px) {
+    .map {
+        margin-top: 95px;
+    }
+
+    .contacts__item-title {
+        font-size: 22px;
+        line-height: 23px;
+        margin-bottom: 16px;
+    }
+
+    .contacts__item-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .map {
+        margin-top: 80px;
+    }
+
+    .contacts {
+        top: 45px;
+        max-width: 290px;
+        padding: 35px 29px;
+
+        .section__title {
+            text-align: left;
+        }
+    }
+
+    .contacts__top {
+        margin-top: 27px;
+        flex-direction: column;
+    }
+
+    .contacts__item:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .contacts__item-title {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 16px;
+    }
+
+    .contacts__item-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .contacts__item {
+        margin-bottom: 27px;
+    }
+
+    .contacts__btn {
+        margin-top: 35px;
+    }
+
+    .contacts__logo {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .contacts__logo {
+        text-align: left;
+    }
+    
+}
+
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 340px) {
+
+
+}

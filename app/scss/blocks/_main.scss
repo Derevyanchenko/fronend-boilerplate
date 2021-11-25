@@ -1,0 +1,268 @@
+// main 
+
+.main {
+    padding-top: 101px;
+    padding-bottom: 104px;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // min-height: 605px;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(23, 23, 23, 0.75);
+    }
+}
+
+.main__wrapper {
+
+}
+
+.main__content {
+
+}
+
+.main__title {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 43px;
+}
+
+.main__desc {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 27px;
+}
+
+.main__variants {
+
+}
+
+.main__variant {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:last-child .main__variant-number::after {
+        display: none !important;
+    }
+    &-number {
+        width: 28px;
+        height: 28px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 13px;
+        font-size: 16px;
+        line-height: 19px;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 31px;
+            width: 1px;
+            left: 50%;
+            background: #fff;
+            bottom: -31px;
+        }
+    }
+    &-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.main__form {
+
+    &-wrapper {
+        margin-top: 20px;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 20px);
+    }
+
+    &-title {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    &-desc {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+}
+
+.main__btn {
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.main__form-inlineInputs {
+    display: flex;
+    align-items: center;
+}
+
+// ==========================================================================================================================================================
+// responsive
+
+
+@media (max-width: 1200px) {
+
+    .main__title {
+        font-size: 50px;
+    }
+
+    .main__form-wrapper {
+        padding: 0 30px;
+    }
+
+    .form-control {
+        max-width: 180px;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .main {
+        padding: 80px 0;
+    }
+
+    .main__title {
+        font-size: 44px;
+        margin-bottom: 42px;
+    }
+
+    .main__desc {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    .main__variant-text {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .main__variant {
+        margin-bottom: 20px;
+    }
+
+    .main__variant-number:after {
+        height: 20px;
+        bottom: -21px;
+    }
+
+    .main__form-wrapper {
+        margin-top: 62px;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 61px;
+    }
+
+    .form-control {
+        max-width: 200px;
+        margin-right: 20px;
+    }
+
+    .main__form-desc {
+        margin-bottom: 32px;
+        line-height: 19px;
+    }
+    
+}
+
+
+
+@media (max-width: 767px) {
+
+    .main {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .main__title {
+        font-size: 37px;
+        line-height: 45px;
+    }
+
+    .main__desc {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .main__variant-text {
+        font-size: 15px;
+        line-height: 1;
+    }
+
+    .main {
+        background-position-x: -440px;
+    }
+
+}
+
+@media (max-width: 567px) {
+
+    .main__form-inlineInputs {
+        flex-direction: column;
+    }
+    .form-control {
+        margin-right: 0;
+        margin-bottom: 20px;
+        input {
+            font-size: 14px;
+        }
+    }
+
+    .main__btn {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    
+    .form__desc {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .main__form-desc {
+        br {
+            display: none;
+        }
+    }
+
+    .main__form-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}

@@ -1,0 +1,178 @@
+// cta
+
+.cta {
+    margin-top: 170px;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background-image: url(../img/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(23, 23, 23, 0.75);
+    }
+
+    .section__title {
+        color: #fff;
+    }
+
+    .section__subtitle {
+        margin-top: 11px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.cta__wrapper {
+      margin-top: 51px;  
+    .form-control {
+        max-width: 297px;
+        width: 100%;
+        input {
+            height: 58px;
+        }
+    }
+
+    .btn {
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 297px;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 18px;
+    }
+
+    .btn-container {
+
+    }
+
+    .form__desc {
+        text-align: left;
+        br {
+            display: none;
+        }
+    }
+
+}
+
+.cta__form {
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+    
+}
+
+
+@media (max-width: 991px) {
+    .cta  {
+        margin-top: 130px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .cta__wrapper .form-control {
+        max-width: 220px;
+        width: 100%;
+    }
+
+    .cta__wrapper .btn {
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 220px;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 18px;
+        margin-right: 0;
+    }
+
+    .cta__wrapper {
+        margin-top: 40px;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .cta  {
+        margin-top: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .cta__wrapper {
+        margin-top: 29px;
+    }
+
+    .cta__wrapper .form-control {
+        max-width: 290px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .cta__form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-container {
+        max-width: 290px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .cta__wrapper .btn {
+        max-width: 290px;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+
+    .cta__wrapper .form__desc {
+        text-align: center;
+    }
+
+    .cta__wrapper .form__desc {
+        font-size: 8px;
+        line-height: 10px;
+        max-width: 206px;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 340px) {
+
+
+}

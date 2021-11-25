@@ -1,0 +1,129 @@
+// advan
+
+.advan {
+    margin-top: 130px;
+}
+
+.advan__wrapper {
+    margin-top: 58px;
+}
+
+.advan__item {
+    text-align: center;
+    &-icon {
+        margin-bottom: 26px;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #121215;
+        margin-bottom: 12px;
+    }
+
+    &-text {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #121215;
+        max-width: 232px;
+        margin: auto;
+    }
+
+}
+
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+    .advan__item-title {
+        height: 42px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .advan {
+        .col-lg-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            &:last-child {
+                .advan__item {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    
+
+    .advan__item-title {
+        height: auto;
+    }
+
+    .advan__wrapper {
+        margin-top: 58px;
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advan__item {
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+@media (max-width: 991px) {
+
+    .advan {
+        margin-top: 95px;
+    } 
+
+    .advan__wrapper {
+        margin-top: 48px;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+    .advan {
+        margin-top: 80px;
+        .col-lg-3 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    } 
+
+    .advan__wrapper {
+        margin-top: 40px;
+    }
+
+    .advan__wrapper {
+        margin-top: 40px;
+        max-width: 304px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advan__item-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+}
+
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 340px) {
+
+
+}

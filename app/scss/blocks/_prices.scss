@@ -1,0 +1,129 @@
+// prices
+
+.prices {
+    margin-top: 116px;
+}
+
+.prices__wrapper {
+    margin-top: 51px;
+    position: relative;
+}
+
+.prices__decoration {
+    position: absolute;
+    right: 80px;
+    bottom: -220px;
+    z-index: -1;
+}
+
+.prices__table {
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    thead {
+
+        tr {
+
+        }
+
+        th {
+            padding: 19px 0;
+            text-align: center;
+            border: 1px solid #121215;
+            width: 33.3333%;
+            background: #012E67;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #FFFFFF;
+        }
+    }
+
+    tbody {
+
+        tr {
+
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid #121215;
+            width: 33.3333%;
+            padding: 12px 0;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+}
+
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+    
+}
+
+
+@media (max-width: 991px) {
+    .prices {
+        margin-top: 95px;
+    }
+
+    .prices__wrapper {
+        margin-top: 41px;
+    }
+
+    table thead th {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    table tbody td {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .prices {
+        margin-top: 80px;
+    }
+
+    .prices__wrapper {
+        margin-top: 31px;
+    }
+
+    table thead th {
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 35px;
+        padding-bottom: 24px;
+        padding-left: 3.5px;
+        padding-right: 3.5px;
+        text-align: left;
+    }
+
+    table tbody td {
+        padding: 15px 0;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .prices__decoration {
+        display: none;
+    }
+}

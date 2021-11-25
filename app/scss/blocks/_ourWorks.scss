@@ -1,0 +1,166 @@
+// ourWorks
+
+.ourWorks {
+    margin-top: 144px;
+}
+
+.ourWorks__wrapper {
+    margin-top: 59px;
+    position: relative;
+
+    .slider__arrow-prev {
+        left: -37px;
+        top: calc(50% - 20px);
+    }
+
+    .slider__arrow-next {
+        right: -37px;
+        top: calc(50% - 20px);
+    }
+}
+
+.ourWorks__slider {
+
+    &-item {
+
+    }
+
+}
+
+.ourWorks__item {
+
+    &-img {
+    height: 270px;
+    display: block;
+    margin: 0 1px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+.ourWorks__slider-mob {
+    display: none;
+}
+
+.ourWorks__arrows-mob {
+    display: none;
+}
+
+.ourWorks__arrows {
+    display: block;
+}
+
+
+// ==========================================================================================================================================================
+// responsive
+
+@media (max-width: 1366px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+    .ourWorks {
+        margin-top: 120px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .ourWorks {
+        margin-top: 95px;
+
+        .col-lg-4 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .ourWorks__wrapper {
+        margin-top: 45px;
+        max-width: 614px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .ourWorks {
+        margin-top: 80px;
+        .col-lg-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .slider__dots-wrapper {
+            display: none;
+        }
+    }
+
+    .ourWorks__wrapper {
+        margin-top: 31px;
+        max-width: 320px;
+    }
+    
+
+    .ourWorks__slider {
+        display: none;
+    }
+
+    .ourWorks__slider-mob {
+        display: block;
+    }
+
+    .ourWorks__wrapper .slider__arrow-prev,
+    .ourWorks__wrapper .slider__arrow-next {
+        position: static;
+        transform: none;
+        margin: 0 20px;
+    }
+
+    .ourWorks__wrapper .slider__arrow-prev {
+        
+    }
+
+    .ourWorks__wrapper .slider__arrow-next {
+        
+    }
+
+    .slider__arrows.ourWorks__arrows-mob {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ourWorks .col-lg-4 {
+        padding: 0;
+    }
+    .ourWorks__arrows-mob {
+        display: block;
+    }
+
+    .ourWorks__arrows {
+        display: none;
+    }
+}
+
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 340px) {
+
+
+}
